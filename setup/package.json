@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@mysten/bcs": "^1.3.0",
+    "@mysten/sui": "^1.21.2",
+    "dotenv": "^16.4.7",
+    "ed25519": "^0.0.5",
+    "ts-node": "^10.9.2",
+    "tweetnacl": "^1.0.3"
+  },
+  "scripts": {
+    "create": "node ./src/create_new_permission.js",
+    "add": "node ./src/add_permission.js",
+    "modify": "node ./src/modify_permission.js",
+    "remove": "node ./src/remove_permission.js"
+  }
+}
