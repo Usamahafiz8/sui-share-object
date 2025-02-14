@@ -1,7 +1,10 @@
 import { Transaction } from "@mysten/sui/transactions";
 import { Ed25519Keypair } from "@mysten/sui/keypairs/ed25519";
 import { SuiClient } from "@mysten/sui/client";
+import dotenv from "dotenv";
+import { toB64 } from "@mysten/sui/utils"; // Import toB64 utility
 
+dotenv.config();
 const MNEMONIC = "actual cigar sunny trumpet elevator horror actual sing violin verb come way";
 
 async function getWalletKeypair() {
