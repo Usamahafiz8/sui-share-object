@@ -9,8 +9,6 @@ module shareobject::shareobject{
         permissions_list: vector<String>,
     }
 
-
-
     public fun create_permission(
         permissions_list: vector<String>,
         receiver: address,
@@ -59,5 +57,8 @@ module shareobject::shareobject{
 
         vector::swap_remove(&mut permission_wrapper.permissions_list, index);
     }
+
+
+    
 
 }
